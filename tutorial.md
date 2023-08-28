@@ -6,8 +6,8 @@ Google Cloud Platform organizes resources into projects. This allows you to
 collect all the related resources for a single application in one place.
 
 <walkthrough-project-setup></walkthrough-project-setup>
-<walkthrough-menu-navigation projectId="PROJECT-ID"></walkthrough-menu-navigation>
 
+<walkthrough-project-title>
 ```bash
 gcloud services enable iamcredentials.googleapis.com --project=<PROJECT-ID>
 ```
@@ -24,7 +24,7 @@ gcloud projects add-iam-policy-binding $(PROJECT_ID) \
   --member="test-sts-checkred-external-aco@checkred-external-app.iam.gserviceaccount.com" \
   --role="roles/iam.serviceAccountTokenCreator"
 ```
-
+</walkthrough-project-setup>
 ## Let's get started!
 
 Get your users up and running quickly with your project by including an interactive tutorial.
