@@ -1,5 +1,11 @@
 # Introduction to Writing Tutorials in Cloud Shell
 
+## Project Setup
+
+Google Cloud Platform organizes resources into projects. This allows you to
+collect all the related resources for a single application in one place.
+
+<walkthrough-project-setup></walkthrough-project-setup>
 
 ## Let's get started!
 
