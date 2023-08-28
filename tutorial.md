@@ -7,7 +7,7 @@ collect all the related resources for a single application in one place.
 
 <walkthrough-project-setup></walkthrough-project-setup>
 
-<walkthrough-project-id/>
+<walkthrough-project-id></walkthrough-project-id>
 ```bash
 gcloud services enable iamcredentials.googleapis.com --project=<PROJECT-ID>
 ```
