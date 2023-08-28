@@ -20,14 +20,25 @@ Click the **Start** button to move to the next step.
 
 ## What is Cloud Shell?
 
-Before we jump in, let's briefly go over what Cloud Shell can do.
-
-Cloud Shell is a personal hosted Virtual Machine which comes pre-loaded with developer tools for Google Cloud products. This interactive shell environment comes with a built-in code editor, persistent disk storage, and web preview functionality. To use command-line access alone, visit [console.cloud.google.com/cloudshell](https://console.cloud.google.com/cloudshell).
-
-You can direct your users to Cloud Shell to help them quickly get started with your project; giving them an opportunity to step through a use case and familiarize themselves with your project's functionality.
-
-Continue on to the next step to start setting up your tutorial.
-
+```bash
+PROJECT_ID=$(gcloud config get-value project)
+```
+```bash
+gcloud services enable iamcredentials.googleapis.com
+```
+```bash
+gcloud iam service-accounts create checkred-integration-account --display-name "CheckRed Integration"
+```
+```bash
+gcloud projects add-iam-policy-binding $(PROJECT_ID) \
+  --member="serviceAccount:my-service-account@YOUR_PROJECT_ID.iam.gserviceaccount.com" \
+  --role="roles/iam.viewer"
+```
+```bash
+gcloud projects add-iam-policy-binding $(PROJECT_ID) \
+  --member="test-sts-checkred-external-aco@checkred-external-app.iam.gserviceaccount.com" \
+  --role="roles/iam.serviceAccountTokenCreator"
+```
 
 ## In-context tutorials
 
