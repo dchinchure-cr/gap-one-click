@@ -7,22 +7,21 @@ collect all the related resources for a single application in one place.
 
 <walkthrough-project-setup></walkthrough-project-setup>
 
-<walkthrough-project-id></walkthrough-project-id>
 ```bash
-gcloud services enable iamcredentials.googleapis.com --project=<PROJECT-ID>
+gcloud services enable iamcredentials.googleapis.com --project=<walkthrough-project-id/>
 ```
 ```bash
-gcloud iam service-accounts create checkred-integration-account --display-name "CheckRed Integration" --project=<PROJECT-ID>
+gcloud iam service-accounts create checkred-integration-account --display-name "CheckRed Integration" --project=<walkthrough-project-id/>
 ```
 ```bash
 gcloud projects add-iam-policy-binding $(PROJECT_ID) \
   --member="serviceAccount:my-service-account@YOUR_PROJECT_ID.iam.gserviceaccount.com" \
-  --role="roles/iam.viewer" --project=<PROJECT-ID>
+  --role="roles/iam.viewer" --project=<walkthrough-project-id/>
 ```
 ```bash
 gcloud projects add-iam-policy-binding $(PROJECT_ID) \
   --member="test-sts-checkred-external-aco@checkred-external-app.iam.gserviceaccount.com" \
-  --role="roles/iam.serviceAccountTokenCreator" --project=<PROJECT-ID>
+  --role="roles/iam.serviceAccountTokenCreator" --project=<walkthrough-project-id/>
 ```
 
 ## Let's get started!
