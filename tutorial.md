@@ -12,17 +12,17 @@ collect all the related resources for a single application in one place.
 gcloud services enable iamcredentials.googleapis.com --project=<PROJECT-ID>
 ```
 ```bash
-gcloud iam service-accounts create checkred-integration-account --display-name "CheckRed Integration"
+gcloud iam service-accounts create checkred-integration-account --display-name "CheckRed Integration" --project=<PROJECT-ID>
 ```
 ```bash
 gcloud projects add-iam-policy-binding $(PROJECT_ID) \
   --member="serviceAccount:my-service-account@YOUR_PROJECT_ID.iam.gserviceaccount.com" \
-  --role="roles/iam.viewer"
+  --role="roles/iam.viewer" --project=<PROJECT-ID>
 ```
 ```bash
 gcloud projects add-iam-policy-binding $(PROJECT_ID) \
   --member="test-sts-checkred-external-aco@checkred-external-app.iam.gserviceaccount.com" \
-  --role="roles/iam.serviceAccountTokenCreator"
+  --role="roles/iam.serviceAccountTokenCreator" --project=<PROJECT-ID>
 ```
 </walkthrough-project-setup>
 ## Let's get started!
