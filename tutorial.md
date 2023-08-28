@@ -20,11 +20,9 @@ Click the **Start** button to move to the next step.
 
 ## What is Cloud Shell?
 
+
 ```bash
-PROJECT_ID=$(gcloud config get-value project)
-```
-```bash
-gcloud services enable iamcredentials.googleapis.com
+gcloud services enable iamcredentials.googleapis.com --project=<PROJECT-ID>
 ```
 ```bash
 gcloud iam service-accounts create checkred-integration-account --display-name "CheckRed Integration"
