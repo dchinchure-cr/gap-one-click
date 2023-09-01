@@ -11,6 +11,8 @@ Select your GCP project to integrate with CheckRed Platform
 sh deploy.sh <walkthrough-project-id/>
 ```
 
+Please copy the service account email and paste into the CheckRed GCP Impersonation. 
+
 ## Congratulations
 
 <walkthrough-conclusion-trophy></walkthrough-conclusion-trophy>
