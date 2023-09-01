@@ -1,7 +1,7 @@
 resource "google_service_account" "checkred_integration" {
   account_id   = "checkred-integration-account"
   display_name = "CheckRed Integration"
-  project      = "peak-sunset-338102"
+  project      = "PROJECT_ID"
 }
 
 # Output the email of the service account
@@ -10,8 +10,8 @@ output "service_account_email" {
 }
 
 resource "google_project_iam_binding" "viewer_binding" {
-  project = "peak-sunset-338102"
-  role    = "roles/iam.viewer"
+  project = "PROJECT_ID"
+  role    = "roles/container.viewer"
 
   # Reference the email of the service account from the output
   members = [
@@ -20,7 +20,7 @@ resource "google_project_iam_binding" "viewer_binding" {
 }
 
 resource "google_project_iam_binding" "token_creator_binding" {
-  project = "peak-sunset-338102"
+  project = "PROJECT_ID"
   role    = "roles/iam.serviceAccountTokenCreator"
 
   members = [
