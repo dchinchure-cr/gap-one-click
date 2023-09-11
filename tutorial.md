@@ -6,6 +6,8 @@ Google Cloud Platform organizes resources into projects.
 Select your GCP project to integrate with CheckRed Platform
 <walkthrough-project-setup></walkthrough-project-setup>
 
+<walkthrough-Service-Account-Email></walkthrough-Service-Account-Email>
+
 ## Enable IAM API for generating short-lived credentials & impersonating service accounts. 
 ```bash
 sh deploy.sh <walkthrough-project-id/>
