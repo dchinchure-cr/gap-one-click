@@ -1,4 +1,4 @@
-# CheckRed's GCPM GCP Integration
+# CheckRed's CSPM GCP Integration
 
 ## Project Setup
 
