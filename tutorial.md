@@ -10,8 +10,9 @@ Select your GCP project to integrate with CheckRed Platform
 
 ## Enable IAM API for generating short-lived credentials & impersonating service accounts. 
 ```bash
-sh deploy.sh <walkthrough-project-id/> 
+sh deploy.sh <walkthrough-project-id/> <CHECKRED_SERVICE_ACCOUNT_EMAIL>
 ```
+Click on Copy to Cloud Shell button and replace the <CHECKRED_SERVICE_ACCOUNT_EMAIL> with CheckRed email address 
 
 NOTE: Please copy the output **service_account_email** and paste into the CheckRed GCP Impersonation. 
 
