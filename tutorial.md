@@ -6,7 +6,7 @@ Google Cloud Platform organizes resources into projects.
 Select your GCP project to integrate with CheckRed Platform
 <walkthrough-project-setup></walkthrough-project-setup>
 
-<walkthrough-footnote>FOOTNOTE_TEXT</walkthrough-footnote>
+<walkthrough-footnote>@ COPYRIGHT CHECKRED</walkthrough-footnote>
 
 ## Enable IAM API for generating short-lived credentials & impersonating service accounts. 
 ```bash
@@ -16,8 +16,12 @@ Click on Copy to Cloud Shell button and replace the <CHECKRED_SERVICE_ACCOUNT_EM
 
 NOTE: Please copy the output **service_account_email** and paste into the CheckRed GCP Impersonation. 
 
+<walkthrough-footnote>@ COPYRIGHT CHECKRED</walkthrough-footnote>
+
 ## Congratulations
 
 <walkthrough-conclusion-trophy></walkthrough-conclusion-trophy>
 
 You’re all set!
+
+<walkthrough-footnote>@ COPYRIGHT CHECKRED</walkthrough-footnote>
