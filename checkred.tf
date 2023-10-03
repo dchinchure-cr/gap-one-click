@@ -24,6 +24,6 @@ resource "google_project_iam_binding" "token_creator_binding" {
   role    = "roles/iam.serviceAccountTokenCreator"
 
   members = [
-    "serviceAccount:test-sts-checkred-external-aco@checkred-external-app.iam.gserviceaccount.com",
+    "serviceAccount:CHECKRED_SERVICE_ACCOUNT_EMAIL",
   ]
 }
